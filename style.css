@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.search-container{
+    width: 30%;
+    display: flex;
+    /* border: 1px solid black; */
+    gap: 1rem;
+
+}
+
+.search-container input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+}
+
+.btn{
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 0.2rem 1rem;
+    font-size: 1em;
+}
+
+.btn:hover{
+    background-color: rgb(241, 3, 241);
+}
+
+.btn:active{
+    background-color: blueviolet;
+}
+
+.avtar{
+    justify-content: space-between;
+    
+}
+
+.avatar-img img{
+    width: 50%;
+    height: 20%;
+
+}
