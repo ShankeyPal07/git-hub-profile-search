@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
 }
 
-body{
+body {
     height: 100%;
     width: 100%;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.container{
+.container {
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -21,25 +21,25 @@ body{
     gap: 1rem;
 }
 
-.container h1{
+.container h1 {
     font-size: 3rem;
 }
 
-.search-container{
-    width: 30%;
+.search-container {
+    width: 60%;
     display: flex;
     /* border: 1px solid black; */
     gap: 1rem;
 
 }
 
-.search-container input{
+.search-container input {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1em;
 }
 
-.btn{
+.btn {
     background-color: purple;
     color: white;
     border: none;
@@ -47,21 +47,59 @@ body{
     font-size: 1em;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgb(241, 3, 241);
 }
 
-.btn:active{
+.btn:active {
     background-color: blueviolet;
 }
 
-.avtar{
+.avtar {
     justify-content: space-between;
-    
+    /* border: 2px solid black; */
+    align-items: center;
+
 }
 
-.avatar-img img{
-    width: 50%;
-    height: 20%;
+.avatar-img img {
+    width: 5rem;
+    border-radius: 50%;
 
+
+}
+
+
+.avatar-img {
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+
+}
+
+
+.card-container{
+    /* width: 50%; */
+    min-width: 50%;
+    padding: 4rem 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+    border-radius: 10px;
+}
+
+.profile-btn{
+    flex: none;
+}
+
+
+.avtar-desc h1 , h2{
+    font-size: 1.2em;
+}
+
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
 }
