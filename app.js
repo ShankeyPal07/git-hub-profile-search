@@ -2,7 +2,7 @@ const url = "https://api.github.com/users";
 const srchBtnEl = document.getElementById("srchbtn");
 const user = document.getElementById("srchinput");
 const profileEL = document.getElementById("profile");
-const loadingEL = document.getElementById('loading')
+const loadingEL = document.getElementById("loading");
 
 const generateProfile = (profile) => {
   return `
@@ -51,15 +51,12 @@ const fecthProfile = async () => {
     const data = await res.json();
 
     if (data.bio) {
-        loadingEL.innerHTML = ""
-        profileEL.innerHTML = generateProfile(data);
-        
+      loadingEL.innerHTML = "";
+      profileEL.innerHTML = generateProfile(data);
+    } else {
+      loadingEL.innerHTML = data.message;
+      profileEL.innerText = "";
     }
-    else{
-loadingEL.innerHTML= data.message
-profileEL.innerText= ""
-    }
-
   } catch (error) {
     console.log(error);
   }
