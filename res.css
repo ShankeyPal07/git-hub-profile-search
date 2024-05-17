@@ -1,15 +1,10 @@
 @media only screen and (max-width: 375px)  {
  
 
-    .search-container input {
-        width: 100%;
-        padding: 0;
-    }
 
-    .btn {
-        background-color: purple;
-        color: white;
-        border: none;
+
+    body{
+        font-size: 3vw;
     }
     
 }
